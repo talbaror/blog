@@ -2,24 +2,24 @@
 {% load staticfiles %}
 <html>
 <head>
-    <meta charset="utf-8" />
-    <title>Blog</title>
-    <!-- Bootstrap -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <title>Blog Project</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- Medium Style Editor -->
-        <script src="//cdn.jsdelivr.net/npm/medium-editor@latest/dist/js/medium-editor.min.js"></script>
-        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/medium-editor@latest/dist/css/medium-editor.min.css" type="text/css" media="screen" charset="utf-8">
-    
-        <!-- Custom CSS -->
-    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-    <!-- fONTS-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat|Russo+One" rel="stylesheet"> 
+        {# MEDIUM STYLE EDITOR#}
+        <script src="//cdn.jsdelivr.net/medium-editor/latest/js/medium-editor.min.js"></script>
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/medium-editor/latest/css/medium-editor.min.css" type="text/css" media="screen" charset="utf-8">
+
+
+        {# Custom CSS#}
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+
+        {# Fonts#}
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Russo+One" rel="stylesheet">
+
 
 </head>
 <body>
@@ -28,7 +28,7 @@
     <nav class="navbar navbar-default techfont custom-navbar">
         <div class="conatainer">
             <ul class="nav navbar-nav">
-                    <li><a class="navbar-brand bigbrand" href="{% url post_list%}">My Blog</a></li>
+                    <li><a class="navbar-brand bigbrand" href="{% url 'post_list' %}">My Blog</a></li>
                     <li><a href="{%url 'about' %}">About</a> </li>
                     <li><a href="https://github.com"></a>GitHub</li>
                     <li><a href="https://www.linkedin.com"></a>LinkedIn</li>
